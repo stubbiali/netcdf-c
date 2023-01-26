@@ -163,6 +163,8 @@ static herr_t H5FD_http_unlock(H5FD_t *_file);
 
 /* Beware, not same as H5FD_HTTP_g */
 static const H5FD_class_t H5FD_http_g = {
+    H5FD_CLASS_VERSION,         /* version      */
+    H5FD_VFD_DEFAULT,           /* VFD driver   */
     "http",                     /* name         */
     MAXADDR,                    /* maxaddr      */
     H5F_CLOSE_WEAK,             /* fc_degree    */
